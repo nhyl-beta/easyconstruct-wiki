@@ -1,1050 +1,122 @@
 {
- "nodes": [
-  {
-   "id": "center",
-   "type": "text",
-   "text": "# 🏗️ EasyConstruct\n[[00 Start Here|Open Start Here]]\n\nCloud-based construction operations management system for ORRA Construction Inc.",
-   "x": -200,
-   "y": -110,
-   "width": 400,
-   "height": 220,
-   "color": "4"
-  },
-  {
-   "id": "L0",
-   "type": "text",
-   "text": "## Big Picture",
-   "x": -860,
-   "y": -1315,
-   "width": 260,
-   "height": 80,
-   "color": "1"
-  },
-  {
-   "id": "L0_0",
-   "type": "text",
-   "text": "**[[What is EasyConstruct]]**\nPERN web app for ORRA",
-   "x": -1300,
-   "y": -1495,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "L0_1",
-   "type": "text",
-   "text": "**[[The Problem at ORRA]]**\nExcel, folders, manual pay",
-   "x": -1300,
-   "y": -1385,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "L0_2",
-   "type": "text",
-   "text": "**[[Objectives]]**\n4 fixed thesis goals",
-   "x": -1300,
-   "y": -1275,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "L0_3",
-   "type": "text",
-   "text": "**[[Scope and Limitations]]**\n10 roles, advisory AI",
-   "x": -1300,
-   "y": -1165,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "L1",
-   "type": "text",
-   "text": "## Roles",
-   "x": -860,
-   "y": -410,
-   "width": 260,
-   "height": 80,
-   "color": "2"
-  },
-  {
-   "id": "L1_0",
-   "type": "text",
-   "text": "**[[Roles Overview]]**\n4 families, 2-layer enforcement",
-   "x": -1300,
-   "y": -975,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_1",
-   "type": "text",
-   "text": "**[[Owner]]**\nRead-only executive",
-   "x": -1300,
-   "y": -865,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_2",
-   "type": "text",
-   "text": "**[[Admin]]**\nAll projects, final stage",
-   "x": -1300,
-   "y": -755,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_3",
-   "type": "text",
-   "text": "**[[IT Designer]]**\nAccounts & security",
-   "x": -1300,
-   "y": -645,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_4",
-   "type": "text",
-   "text": "**[[Project Manager]]**\nOwns & advances projects",
-   "x": -1300,
-   "y": -535,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_5",
-   "type": "text",
-   "text": "**[[Engineer]]**\nRequirements, progress, issues",
-   "x": -1300,
-   "y": -425,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_6",
-   "type": "text",
-   "text": "**[[Site Personnel]]**\nGeofenced attendance",
-   "x": -1300,
-   "y": -315,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_7",
-   "type": "text",
-   "text": "**[[Architect]]**\nProposals, designs, blueprints",
-   "x": -1300,
-   "y": -205,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_8",
-   "type": "text",
-   "text": "**[[Consultant]]**\nReviews & advisory",
-   "x": -1300,
-   "y": -95,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_9",
-   "type": "text",
-   "text": "**[[Human Resources]]**\nEmployees, payroll batches",
-   "x": -1300,
-   "y": 15,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L1_10",
-   "type": "text",
-   "text": "**[[Finance Manager]]**\nBudgets, approvals",
-   "x": -1300,
-   "y": 125,
-   "width": 300,
-   "height": 90,
-   "color": "2"
-  },
-  {
-   "id": "L2",
-   "type": "text",
-   "text": "## Decision Support",
-   "x": -860,
-   "y": 550,
-   "width": 260,
-   "height": 80,
-   "color": "4"
-  },
-  {
-   "id": "L2_0",
-   "type": "text",
-   "text": "**[[Decision Support Overview]]**\nRule-based, advisory only",
-   "x": -1300,
-   "y": 315,
-   "width": 300,
-   "height": 90,
-   "color": "4"
-  },
-  {
-   "id": "L2_1",
-   "type": "text",
-   "text": "**[[Signals]]**\n8 rules + playbook",
-   "x": -1300,
-   "y": 425,
-   "width": 300,
-   "height": 90,
-   "color": "4"
-  },
-  {
-   "id": "L2_2",
-   "type": "text",
-   "text": "**[[Proposal Validation and Cost Reference]]**\nMedian & Dice similarity",
-   "x": -1300,
-   "y": 535,
-   "width": 300,
-   "height": 90,
-   "color": "4"
-  },
-  {
-   "id": "L2_3",
-   "type": "text",
-   "text": "**[[Plan Suggestion and Impact Forecast]]**\nDraft plan, cost/schedule impact",
-   "x": -1300,
-   "y": 645,
-   "width": 300,
-   "height": 90,
-   "color": "4"
-  },
-  {
-   "id": "L2_4",
-   "type": "text",
-   "text": "**[[Reconciliation Checks]]**\nTotals vs source records",
-   "x": -1300,
-   "y": 755,
-   "width": 300,
-   "height": 90,
-   "color": "4"
-  },
-  {
-   "id": "L3",
-   "type": "text",
-   "text": "## Quality & Timeline",
-   "x": -860,
-   "y": 1180,
-   "width": 260,
-   "height": 80,
-   "color": "3"
-  },
-  {
-   "id": "L3_0",
-   "type": "text",
-   "text": "**[[Testing Strategy]]**\nUnit → DB → Playwright → manual",
-   "x": -1300,
-   "y": 945,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "L3_1",
-   "type": "text",
-   "text": "**[[QA Bug Tracking Nov 2026]]**\nTC_2 / TC_3 batches",
-   "x": -1300,
-   "y": 1055,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "L3_2",
-   "type": "text",
-   "text": "**[[Development Timeline]]**\nFeb → Nov 2026",
-   "x": -1300,
-   "y": 1165,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "L3_3",
-   "type": "text",
-   "text": "**[[November 2026 Updates]]**\nLatest changes",
-   "x": -1300,
-   "y": 1275,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "L3_4",
-   "type": "text",
-   "text": "**[[Glossary]]**\nTerms in plain words",
-   "x": -1300,
-   "y": 1385,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0",
-   "type": "text",
-   "text": "## Core Flows",
-   "x": 600,
-   "y": -985,
-   "width": 260,
-   "height": 80,
-   "color": "3"
-  },
-  {
-   "id": "R0_0",
-   "type": "text",
-   "text": "**[[Project Lifecycle]]**\nPhases & computed progress",
-   "x": 1000,
-   "y": -1440,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_1",
-   "type": "text",
-   "text": "**[[Lifecycle Gates]]**\nP/D/C/K/X checklists",
-   "x": 1000,
-   "y": -1330,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_2",
-   "type": "text",
-   "text": "**[[Workflows and Approvals]]**\nOrdered multi-role sign-off",
-   "x": 1000,
-   "y": -1220,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_3",
-   "type": "text",
-   "text": "**[[RFI and RFA]]**\nQuestions & approvals, no-login reply",
-   "x": 1000,
-   "y": -1110,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_4",
-   "type": "text",
-   "text": "**[[Attendance and Geofencing]]**\nHaversine, 300 m radius",
-   "x": 1000,
-   "y": -1000,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_5",
-   "type": "text",
-   "text": "**[[Payroll Engine]]**\nGross − SSS/PhilHealth/Pag-IBIG",
-   "x": 1000,
-   "y": -890,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_6",
-   "type": "text",
-   "text": "**[[Finance Module]]**\nBudget, expenses, procurement",
-   "x": 1000,
-   "y": -780,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_7",
-   "type": "text",
-   "text": "**[[Documents and Files]]**\nS3 + SHA-256 + audit",
-   "x": 1000,
-   "y": -670,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R0_8",
-   "type": "text",
-   "text": "**[[Notifications and Realtime]]**\nSSE + Neon Realtime",
-   "x": 1000,
-   "y": -560,
-   "width": 300,
-   "height": 90,
-   "color": "3"
-  },
-  {
-   "id": "R1",
-   "type": "text",
-   "text": "## Architecture",
-   "x": 600,
-   "y": 30,
-   "width": 260,
-   "height": 80,
-   "color": "5"
-  },
-  {
-   "id": "R1_0",
-   "type": "text",
-   "text": "**[[Architecture Overview]]**\nRestaurant analogy + diagram",
-   "x": 1000,
-   "y": -370,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_1",
-   "type": "text",
-   "text": "**[[Tech Stack]]**\nReact, Express, Postgres…",
-   "x": 1000,
-   "y": -260,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_2",
-   "type": "text",
-   "text": "**[[Monorepo Structure]]**\napps/, packages/, ADR 0001",
-   "x": 1000,
-   "y": -150,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_3",
-   "type": "text",
-   "text": "**[[Backend Layering]]**\nroutes→controller→service→repo",
-   "x": 1000,
-   "y": -40,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_4",
-   "type": "text",
-   "text": "**[[API Modules]]**\n9 modules, registry",
-   "x": 1000,
-   "y": 70,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_5",
-   "type": "text",
-   "text": "**[[Frontend Architecture]]**\nRefine providers, feature folders",
-   "x": 1000,
-   "y": 180,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_6",
-   "type": "text",
-   "text": "**[[Database and Drizzle]]**\nERD, schema, 47 migrations",
-   "x": 1000,
-   "y": 290,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R1_7",
-   "type": "text",
-   "text": "**[[Request Journey]]**\nOne click, end to end",
-   "x": 1000,
-   "y": 400,
-   "width": 300,
-   "height": 90,
-   "color": "5"
-  },
-  {
-   "id": "R2",
-   "type": "text",
-   "text": "## Security",
-   "x": 600,
-   "y": 715,
-   "width": 260,
-   "height": 80,
-   "color": "1"
-  },
-  {
-   "id": "R2_0",
-   "type": "text",
-   "text": "**[[Authentication and Sessions]]**\nJWT, bcrypt, throttle",
-   "x": 1000,
-   "y": 590,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "R2_1",
-   "type": "text",
-   "text": "**[[Access Control]]**\nRole · membership · authority",
-   "x": 1000,
-   "y": 700,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "R2_2",
-   "type": "text",
-   "text": "**[[Security Hardening Nov 2026]]**\n12 Nov review: 13 fixes",
-   "x": 1000,
-   "y": 810,
-   "width": 300,
-   "height": 90,
-   "color": "1"
-  },
-  {
-   "id": "R3",
-   "type": "text",
-   "text": "## Infrastructure",
-   "x": 600,
-   "y": 1180,
-   "width": 260,
-   "height": 80,
-   "color": "6"
-  },
-  {
-   "id": "R3_0",
-   "type": "text",
-   "text": "**[[Deployment and Hosting]]**\nCloudflare, Render, Neon, Filebase",
-   "x": 1000,
-   "y": 1000,
-   "width": 300,
-   "height": 90,
-   "color": "6"
-  },
-  {
-   "id": "R3_1",
-   "type": "text",
-   "text": "**[[Scheduled Jobs and Backups]]**\nGitHub Actions cron",
-   "x": 1000,
-   "y": 1110,
-   "width": 300,
-   "height": 90,
-   "color": "6"
-  },
-  {
-   "id": "R3_2",
-   "type": "text",
-   "text": "**[[Caching and Performance]]**\nVersioned cache, pagination",
-   "x": 1000,
-   "y": 1220,
-   "width": 300,
-   "height": 90,
-   "color": "6"
-  },
-  {
-   "id": "R3_3",
-   "type": "text",
-   "text": "**[[Environments and Branches]]**\nthesis-final(-staging/-test)",
-   "x": 1000,
-   "y": 1330,
-   "width": 300,
-   "height": 90,
-   "color": "6"
-  }
- ],
- "edges": [
-  {
-   "id": "eL0",
-   "fromNode": "center",
-   "fromSide": "left",
-   "toNode": "L0",
-   "toSide": "right",
-   "color": "1"
-  },
-  {
-   "id": "eL0_0",
-   "fromNode": "L0",
-   "fromSide": "left",
-   "toNode": "L0_0",
-   "toSide": "right",
-   "color": "1"
-  },
-  {
-   "id": "eL0_1",
-   "fromNode": "L0",
-   "fromSide": "left",
-   "toNode": "L0_1",
-   "toSide": "right",
-   "color": "1"
-  },
-  {
-   "id": "eL0_2",
-   "fromNode": "L0",
-   "fromSide": "left",
-   "toNode": "L0_2",
-   "toSide": "right",
-   "color": "1"
-  },
-  {
-   "id": "eL0_3",
-   "fromNode": "L0",
-   "fromSide": "left",
-   "toNode": "L0_3",
-   "toSide": "right",
-   "color": "1"
-  },
-  {
-   "id": "eL1",
-   "fromNode": "center",
-   "fromSide": "left",
-   "toNode": "L1",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_0",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_0",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_1",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_1",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_2",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_2",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_3",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_3",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_4",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_4",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_5",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_5",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_6",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_6",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_7",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_7",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_8",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_8",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_9",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_9",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL1_10",
-   "fromNode": "L1",
-   "fromSide": "left",
-   "toNode": "L1_10",
-   "toSide": "right",
-   "color": "2"
-  },
-  {
-   "id": "eL2",
-   "fromNode": "center",
-   "fromSide": "left",
-   "toNode": "L2",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL2_0",
-   "fromNode": "L2",
-   "fromSide": "left",
-   "toNode": "L2_0",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL2_1",
-   "fromNode": "L2",
-   "fromSide": "left",
-   "toNode": "L2_1",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL2_2",
-   "fromNode": "L2",
-   "fromSide": "left",
-   "toNode": "L2_2",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL2_3",
-   "fromNode": "L2",
-   "fromSide": "left",
-   "toNode": "L2_3",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL2_4",
-   "fromNode": "L2",
-   "fromSide": "left",
-   "toNode": "L2_4",
-   "toSide": "right",
-   "color": "4"
-  },
-  {
-   "id": "eL3",
-   "fromNode": "center",
-   "fromSide": "left",
-   "toNode": "L3",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eL3_0",
-   "fromNode": "L3",
-   "fromSide": "left",
-   "toNode": "L3_0",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eL3_1",
-   "fromNode": "L3",
-   "fromSide": "left",
-   "toNode": "L3_1",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eL3_2",
-   "fromNode": "L3",
-   "fromSide": "left",
-   "toNode": "L3_2",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eL3_3",
-   "fromNode": "L3",
-   "fromSide": "left",
-   "toNode": "L3_3",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eL3_4",
-   "fromNode": "L3",
-   "fromSide": "left",
-   "toNode": "L3_4",
-   "toSide": "right",
-   "color": "3"
-  },
-  {
-   "id": "eR0",
-   "fromNode": "center",
-   "fromSide": "right",
-   "toNode": "R0",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_0",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_0",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_1",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_1",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_2",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_2",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_3",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_3",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_4",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_4",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_5",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_5",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_6",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_6",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_7",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_7",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR0_8",
-   "fromNode": "R0",
-   "fromSide": "right",
-   "toNode": "R0_8",
-   "toSide": "left",
-   "color": "3"
-  },
-  {
-   "id": "eR1",
-   "fromNode": "center",
-   "fromSide": "right",
-   "toNode": "R1",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_0",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_0",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_1",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_1",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_2",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_2",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_3",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_3",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_4",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_4",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_5",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_5",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_6",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_6",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR1_7",
-   "fromNode": "R1",
-   "fromSide": "right",
-   "toNode": "R1_7",
-   "toSide": "left",
-   "color": "5"
-  },
-  {
-   "id": "eR2",
-   "fromNode": "center",
-   "fromSide": "right",
-   "toNode": "R2",
-   "toSide": "left",
-   "color": "1"
-  },
-  {
-   "id": "eR2_0",
-   "fromNode": "R2",
-   "fromSide": "right",
-   "toNode": "R2_0",
-   "toSide": "left",
-   "color": "1"
-  },
-  {
-   "id": "eR2_1",
-   "fromNode": "R2",
-   "fromSide": "right",
-   "toNode": "R2_1",
-   "toSide": "left",
-   "color": "1"
-  },
-  {
-   "id": "eR2_2",
-   "fromNode": "R2",
-   "fromSide": "right",
-   "toNode": "R2_2",
-   "toSide": "left",
-   "color": "1"
-  },
-  {
-   "id": "eR3",
-   "fromNode": "center",
-   "fromSide": "right",
-   "toNode": "R3",
-   "toSide": "left",
-   "color": "6"
-  },
-  {
-   "id": "eR3_0",
-   "fromNode": "R3",
-   "fromSide": "right",
-   "toNode": "R3_0",
-   "toSide": "left",
-   "color": "6"
-  },
-  {
-   "id": "eR3_1",
-   "fromNode": "R3",
-   "fromSide": "right",
-   "toNode": "R3_1",
-   "toSide": "left",
-   "color": "6"
-  },
-  {
-   "id": "eR3_2",
-   "fromNode": "R3",
-   "fromSide": "right",
-   "toNode": "R3_2",
-   "toSide": "left",
-   "color": "6"
-  },
-  {
-   "id": "eR3_3",
-   "fromNode": "R3",
-   "fromSide": "right",
-   "toNode": "R3_3",
-   "toSide": "left",
-   "color": "6"
-  },
-  {
-   "id": "x0",
-   "fromNode": "L2_0",
-   "fromSide": "right",
-   "toNode": "R0_0",
-   "toSide": "left",
-   "label": "advises, never gates"
-  }
- ]
+	"nodes":[
+		{"id":"center","type":"text","text":"# 🏗️ EasyConstruct\n[[00 Start Here|Open Start Here]]\n\nCloud-based construction operations management system for ORRA Construction Inc.","x":-200,"y":-110,"width":400,"height":220,"color":"4"},
+		{"id":"L0","type":"text","text":"## Big Picture","x":-860,"y":-1315,"width":260,"height":80,"color":"1"},
+		{"id":"L0_0","type":"text","text":"**[[What is EasyConstruct]]**\nPERN web app for ORRA","x":-1300,"y":-1495,"width":300,"height":90,"color":"1"},
+		{"id":"L0_1","type":"text","text":"**[[The Problem at ORRA]]**\nExcel, folders, manual pay","x":-1300,"y":-1385,"width":300,"height":90,"color":"1"},
+		{"id":"L0_2","type":"text","text":"**[[Objectives]]**\n4 fixed thesis goals","x":-1300,"y":-1275,"width":300,"height":90,"color":"1"},
+		{"id":"L0_3","type":"text","text":"**[[Scope and Limitations]]**\n10 roles, advisory AI","x":-1300,"y":-1165,"width":300,"height":90,"color":"1"},
+		{"id":"L1","type":"text","text":"## Roles","x":-860,"y":-410,"width":260,"height":80,"color":"2"},
+		{"id":"L1_0","type":"text","text":"**[[Roles Overview]]**\n4 families, 2-layer enforcement","x":-1300,"y":-975,"width":300,"height":90,"color":"2"},
+		{"id":"L1_1","type":"text","text":"**[[Owner]]**\nRead-only executive","x":-1300,"y":-865,"width":300,"height":90,"color":"2"},
+		{"id":"L1_2","type":"text","text":"**[[Admin]]**\nAll projects, final stage","x":-1300,"y":-755,"width":300,"height":90,"color":"2"},
+		{"id":"L1_3","type":"text","text":"**[[IT Designer]]**\nAccounts & security","x":-1300,"y":-645,"width":300,"height":90,"color":"2"},
+		{"id":"L1_4","type":"text","text":"**[[Project Manager]]**\nOwns & advances projects","x":-1300,"y":-535,"width":300,"height":90,"color":"2"},
+		{"id":"L1_5","type":"text","text":"**[[Engineer]]**\nRequirements, progress, issues","x":-1300,"y":-425,"width":300,"height":90,"color":"2"},
+		{"id":"L1_6","type":"text","text":"**[[Site Personnel]]**\nGeofenced attendance","x":-1300,"y":-315,"width":300,"height":90,"color":"2"},
+		{"id":"L1_7","type":"text","text":"**[[Architect]]**\nProposals, designs, blueprints","x":-1300,"y":-205,"width":300,"height":90,"color":"2"},
+		{"id":"L1_8","type":"text","text":"**[[Consultant]]**\nReviews & advisory","x":-1300,"y":-95,"width":300,"height":90,"color":"2"},
+		{"id":"L1_9","type":"text","text":"**[[Human Resources]]**\nEmployees, payroll batches","x":-1300,"y":15,"width":300,"height":90,"color":"2"},
+		{"id":"L1_10","type":"text","text":"**[[Finance Manager]]**\nBudgets, approvals","x":-1300,"y":125,"width":300,"height":90,"color":"2"},
+		{"id":"L2","type":"text","text":"## Decision Support","x":-860,"y":550,"width":260,"height":80,"color":"4"},
+		{"id":"L2_0","type":"text","text":"**[[Decision Support Overview]]**\nRule-based, advisory only","x":-1300,"y":315,"width":300,"height":90,"color":"4"},
+		{"id":"L2_1","type":"text","text":"**[[Signals]]**\n8 rules + playbook","x":-1300,"y":425,"width":300,"height":90,"color":"4"},
+		{"id":"L2_2","type":"text","text":"**[[Proposal Validation and Cost Reference]]**\nMedian & Dice similarity","x":-1300,"y":535,"width":300,"height":90,"color":"4"},
+		{"id":"L2_3","type":"text","text":"**[[Plan Suggestion and Impact Forecast]]**\nDraft plan, cost/schedule impact","x":-1300,"y":645,"width":300,"height":90,"color":"4"},
+		{"id":"L2_4","type":"text","text":"**[[Reconciliation Checks]]**\nTotals vs source records","x":-1300,"y":755,"width":300,"height":90,"color":"4"},
+		{"id":"L3","type":"text","text":"## Quality & Timeline","x":-860,"y":1180,"width":260,"height":80,"color":"3"},
+		{"id":"L3_0","type":"text","text":"**[[Testing Strategy]]**\nUnit → DB → Playwright → manual","x":-1300,"y":945,"width":300,"height":90,"color":"3"},
+		{"id":"L3_1","type":"text","text":"**[[QA Bug Tracking Nov 2026]]**\nTC_2 / TC_3 batches","x":-1300,"y":1055,"width":300,"height":90,"color":"3"},
+		{"id":"L3_2","type":"text","text":"**[[Development Timeline]]**\nFeb → Nov 2026","x":-1300,"y":1165,"width":300,"height":90,"color":"3"},
+		{"id":"L3_3","type":"text","text":"**[[November 2026 Updates]]**\nLatest changes","x":-1300,"y":1275,"width":300,"height":90,"color":"3"},
+		{"id":"L3_4","type":"text","text":"**[[Glossary]]**\nTerms in plain words","x":-1300,"y":1385,"width":300,"height":90,"color":"3"},
+		{"id":"R0","type":"text","text":"## Core Flows","x":600,"y":-985,"width":260,"height":80,"color":"3"},
+		{"id":"R0_0","type":"text","text":"**[[Project Lifecycle]]**\nPhases & computed progress","x":1000,"y":-1440,"width":300,"height":90,"color":"3"},
+		{"id":"R0_1","type":"text","text":"**[[Lifecycle Gates]]**\nP/D/C/K/X checklists","x":1000,"y":-1330,"width":300,"height":90,"color":"3"},
+		{"id":"R0_2","type":"text","text":"**[[Workflows and Approvals]]**\nOrdered multi-role sign-off","x":1000,"y":-1220,"width":300,"height":90,"color":"3"},
+		{"id":"R0_3","type":"text","text":"**[[RFI and RFA]]**\nQuestions & approvals, no-login reply","x":1000,"y":-1110,"width":300,"height":90,"color":"3"},
+		{"id":"R0_4","type":"text","text":"**[[Attendance and Geofencing]]**\nHaversine, 300 m radius","x":1000,"y":-1000,"width":300,"height":90,"color":"3"},
+		{"id":"R0_5","type":"text","text":"**[[Payroll Engine]]**\nGross − SSS/PhilHealth/Pag-IBIG","x":1000,"y":-890,"width":300,"height":90,"color":"3"},
+		{"id":"R0_6","type":"text","text":"**[[Finance Module]]**\nBudget, expenses, procurement","x":1000,"y":-780,"width":300,"height":90,"color":"3"},
+		{"id":"R0_7","type":"text","text":"**[[Documents and Files]]**\nS3 + SHA-256 + audit","x":1000,"y":-670,"width":300,"height":90,"color":"3"},
+		{"id":"R0_8","type":"text","text":"**[[Notifications and Realtime]]**\nSSE + Neon Realtime","x":1000,"y":-560,"width":300,"height":90,"color":"3"},
+		{"id":"R1","type":"text","text":"## Architecture","x":600,"y":30,"width":260,"height":80,"color":"5"},
+		{"id":"R1_0","type":"text","text":"**[[Architecture Overview]]**\nRestaurant analogy + diagram","x":1000,"y":-370,"width":300,"height":90,"color":"5"},
+		{"id":"R1_1","type":"text","text":"**[[Tech Stack]]**\nReact, Express, Postgres…","x":1000,"y":-260,"width":300,"height":90,"color":"5"},
+		{"id":"R1_2","type":"text","text":"**[[Monorepo Structure]]**\napps/, packages/, ADR 0001","x":1000,"y":-150,"width":300,"height":90,"color":"5"},
+		{"id":"R1_3","type":"text","text":"**[[Backend Layering]]**\nroutes→controller→service→repo","x":1000,"y":-40,"width":300,"height":90,"color":"5"},
+		{"id":"R1_4","type":"text","text":"**[[API Modules]]**\n9 modules, registry","x":1000,"y":70,"width":300,"height":90,"color":"5"},
+		{"id":"R1_5","type":"text","text":"**[[Frontend Architecture]]**\nRefine providers, feature folders","x":1000,"y":180,"width":300,"height":90,"color":"5"},
+		{"id":"R1_6","type":"text","text":"**[[Database and Drizzle]]**\nERD, schema, 47 migrations","x":1000,"y":290,"width":300,"height":90,"color":"5"},
+		{"id":"R1_7","type":"text","text":"**[[Request Journey]]**\nOne click, end to end","x":1000,"y":400,"width":300,"height":90,"color":"5"},
+		{"id":"R2","type":"text","text":"## Security","x":600,"y":715,"width":260,"height":80,"color":"1"},
+		{"id":"R2_0","type":"text","text":"**[[Authentication and Sessions]]**\nJWT, bcrypt, throttle","x":1000,"y":590,"width":300,"height":90,"color":"1"},
+		{"id":"R2_1","type":"text","text":"**[[Access Control]]**\nRole · membership · authority","x":1000,"y":700,"width":300,"height":90,"color":"1"},
+		{"id":"R2_2","type":"text","text":"**[[Security Hardening Nov 2026]]**\n12 Nov review: 13 fixes","x":1000,"y":810,"width":300,"height":90,"color":"1"},
+		{"id":"R3","type":"text","text":"## Infrastructure","x":600,"y":1180,"width":260,"height":80,"color":"6"},
+		{"id":"R3_0","type":"text","text":"**[[Deployment and Hosting]]**\nCloudflare, Render, Neon, Filebase","x":1000,"y":1000,"width":300,"height":90,"color":"6"},
+		{"id":"R3_1","type":"text","text":"**[[Scheduled Jobs and Backups]]**\nGitHub Actions cron","x":1000,"y":1110,"width":300,"height":90,"color":"6"},
+		{"id":"R3_2","type":"text","text":"**[[Caching and Performance]]**\nVersioned cache, pagination","x":1000,"y":1220,"width":300,"height":90,"color":"6"},
+		{"id":"R3_3","type":"text","text":"**[[Environments and Branches]]**\nthesis-final(-staging/-test)","x":1000,"y":1330,"width":300,"height":90,"color":"6"}
+	],
+	"edges":[
+		{"id":"eL0","fromNode":"center","fromSide":"left","toNode":"L0","toSide":"right","color":"1"},
+		{"id":"eL0_0","fromNode":"L0","fromSide":"left","toNode":"L0_0","toSide":"right","color":"1"},
+		{"id":"eL0_1","fromNode":"L0","fromSide":"left","toNode":"L0_1","toSide":"right","color":"1"},
+		{"id":"eL0_2","fromNode":"L0","fromSide":"left","toNode":"L0_2","toSide":"right","color":"1"},
+		{"id":"eL0_3","fromNode":"L0","fromSide":"left","toNode":"L0_3","toSide":"right","color":"1"},
+		{"id":"eL1","fromNode":"center","fromSide":"left","toNode":"L1","toSide":"right","color":"2"},
+		{"id":"eL1_0","fromNode":"L1","fromSide":"left","toNode":"L1_0","toSide":"right","color":"2"},
+		{"id":"eL1_1","fromNode":"L1","fromSide":"left","toNode":"L1_1","toSide":"right","color":"2"},
+		{"id":"eL1_2","fromNode":"L1","fromSide":"left","toNode":"L1_2","toSide":"right","color":"2"},
+		{"id":"eL1_3","fromNode":"L1","fromSide":"left","toNode":"L1_3","toSide":"right","color":"2"},
+		{"id":"eL1_4","fromNode":"L1","fromSide":"left","toNode":"L1_4","toSide":"right","color":"2"},
+		{"id":"eL1_5","fromNode":"L1","fromSide":"left","toNode":"L1_5","toSide":"right","color":"2"},
+		{"id":"eL1_6","fromNode":"L1","fromSide":"left","toNode":"L1_6","toSide":"right","color":"2"},
+		{"id":"eL1_7","fromNode":"L1","fromSide":"left","toNode":"L1_7","toSide":"right","color":"2"},
+		{"id":"eL1_8","fromNode":"L1","fromSide":"left","toNode":"L1_8","toSide":"right","color":"2"},
+		{"id":"eL1_9","fromNode":"L1","fromSide":"left","toNode":"L1_9","toSide":"right","color":"2"},
+		{"id":"eL1_10","fromNode":"L1","fromSide":"left","toNode":"L1_10","toSide":"right","color":"2"},
+		{"id":"eL2","fromNode":"center","fromSide":"left","toNode":"L2","toSide":"right","color":"4"},
+		{"id":"eL2_0","fromNode":"L2","fromSide":"left","toNode":"L2_0","toSide":"right","color":"4"},
+		{"id":"eL2_1","fromNode":"L2","fromSide":"left","toNode":"L2_1","toSide":"right","color":"4"},
+		{"id":"eL2_2","fromNode":"L2","fromSide":"left","toNode":"L2_2","toSide":"right","color":"4"},
+		{"id":"eL2_3","fromNode":"L2","fromSide":"left","toNode":"L2_3","toSide":"right","color":"4"},
+		{"id":"eL2_4","fromNode":"L2","fromSide":"left","toNode":"L2_4","toSide":"right","color":"4"},
+		{"id":"eL3","fromNode":"center","fromSide":"left","toNode":"L3","toSide":"right","color":"3"},
+		{"id":"eL3_0","fromNode":"L3","fromSide":"left","toNode":"L3_0","toSide":"right","color":"3"},
+		{"id":"eL3_1","fromNode":"L3","fromSide":"left","toNode":"L3_1","toSide":"right","color":"3"},
+		{"id":"eL3_2","fromNode":"L3","fromSide":"left","toNode":"L3_2","toSide":"right","color":"3"},
+		{"id":"eL3_3","fromNode":"L3","fromSide":"left","toNode":"L3_3","toSide":"right","color":"3"},
+		{"id":"eL3_4","fromNode":"L3","fromSide":"left","toNode":"L3_4","toSide":"right","color":"3"},
+		{"id":"eR0","fromNode":"center","fromSide":"right","toNode":"R0","toSide":"left","color":"3"},
+		{"id":"eR0_0","fromNode":"R0","fromSide":"right","toNode":"R0_0","toSide":"left","color":"3"},
+		{"id":"eR0_1","fromNode":"R0","fromSide":"right","toNode":"R0_1","toSide":"left","color":"3"},
+		{"id":"eR0_2","fromNode":"R0","fromSide":"right","toNode":"R0_2","toSide":"left","color":"3"},
+		{"id":"eR0_3","fromNode":"R0","fromSide":"right","toNode":"R0_3","toSide":"left","color":"3"},
+		{"id":"eR0_4","fromNode":"R0","fromSide":"right","toNode":"R0_4","toSide":"left","color":"3"},
+		{"id":"eR0_5","fromNode":"R0","fromSide":"right","toNode":"R0_5","toSide":"left","color":"3"},
+		{"id":"eR0_6","fromNode":"R0","fromSide":"right","toNode":"R0_6","toSide":"left","color":"3"},
+		{"id":"eR0_7","fromNode":"R0","fromSide":"right","toNode":"R0_7","toSide":"left","color":"3"},
+		{"id":"eR0_8","fromNode":"R0","fromSide":"right","toNode":"R0_8","toSide":"left","color":"3"},
+		{"id":"eR1","fromNode":"center","fromSide":"right","toNode":"R1","toSide":"left","color":"5"},
+		{"id":"eR1_0","fromNode":"R1","fromSide":"right","toNode":"R1_0","toSide":"left","color":"5"},
+		{"id":"eR1_1","fromNode":"R1","fromSide":"right","toNode":"R1_1","toSide":"left","color":"5"},
+		{"id":"eR1_2","fromNode":"R1","fromSide":"right","toNode":"R1_2","toSide":"left","color":"5"},
+		{"id":"eR1_3","fromNode":"R1","fromSide":"right","toNode":"R1_3","toSide":"left","color":"5"},
+		{"id":"eR1_4","fromNode":"R1","fromSide":"right","toNode":"R1_4","toSide":"left","color":"5"},
+		{"id":"eR1_5","fromNode":"R1","fromSide":"right","toNode":"R1_5","toSide":"left","color":"5"},
+		{"id":"eR1_6","fromNode":"R1","fromSide":"right","toNode":"R1_6","toSide":"left","color":"5"},
+		{"id":"eR1_7","fromNode":"R1","fromSide":"right","toNode":"R1_7","toSide":"left","color":"5"},
+		{"id":"eR2","fromNode":"center","fromSide":"right","toNode":"R2","toSide":"left","color":"1"},
+		{"id":"eR2_0","fromNode":"R2","fromSide":"right","toNode":"R2_0","toSide":"left","color":"1"},
+		{"id":"eR2_1","fromNode":"R2","fromSide":"right","toNode":"R2_1","toSide":"left","color":"1"},
+		{"id":"eR2_2","fromNode":"R2","fromSide":"right","toNode":"R2_2","toSide":"left","color":"1"},
+		{"id":"eR3","fromNode":"center","fromSide":"right","toNode":"R3","toSide":"left","color":"6"},
+		{"id":"eR3_0","fromNode":"R3","fromSide":"right","toNode":"R3_0","toSide":"left","color":"6"},
+		{"id":"eR3_1","fromNode":"R3","fromSide":"right","toNode":"R3_1","toSide":"left","color":"6"},
+		{"id":"eR3_2","fromNode":"R3","fromSide":"right","toNode":"R3_2","toSide":"left","color":"6"},
+		{"id":"eR3_3","fromNode":"R3","fromSide":"right","toNode":"R3_3","toSide":"left","color":"6"},
+		{"id":"x0","fromNode":"L2_0","fromSide":"right","toNode":"R0_0","toSide":"left","label":"advises, never gates"}
+	]
 }
