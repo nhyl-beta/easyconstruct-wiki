@@ -19,6 +19,7 @@ aliases: [Defense Questions, Panel Questions, Q&A, Mock Defense]
 | [[Programmer Questions]] | Developer role | Code, algorithms, tooling |
 | [[Quality Assurance Questions]] | QA role | Test strategy, bugs, evidence |
 | [[System Analyst Questions]] | SA role | Requirements, modeling, business rules |
+| [[Study Guide by Role]] 📚 | **Start here when revising** | What each member studies, plus a revision schedule |
 
 ## 🔵 How to use this bank
 1. **Read the linked note, not just the answer.** Every answer points to the note with the real detail — the panel's second question is always *"can you expand on that?"*
@@ -27,7 +28,7 @@ aliases: [Defense Questions, Panel Questions, Q&A, Mock Defense]
 3. **Never bluff.** "That's not implemented, and here's why it was out of scope" scores better than an invented feature. Your [[Scope and Limitations]] exists precisely so you can say that confidently.
 
 > [!warning] The three questions most likely to hurt
-> 1. **"Why do you call it AI when it's just if-else?"** → [[General Questions#On the "AI" claim]]. Have this answer word-perfect; it's the single biggest exposure in the paper.
+> 1. **"Why do you call it AI when it's just if-else?"** → This one is **defensible — do not concede it.** Rule-based reasoning is a recognized branch of AI. The full argument and a scripted answer are in [[Why It Counts as AI]].
 > 2. **"Did you deploy it at ORRA? What were the results?"** → Not yet implemented at ORRA, so there are no production or survey results. Say it plainly. → [[November 2026 Updates]]
 > 3. **"Your manuscript says X but your system does Y."** → Four known mismatches are listed in [[00 Start Here]]. Know them before the panel finds them.
 

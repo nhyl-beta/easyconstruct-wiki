@@ -79,4 +79,4 @@ aliases: [QA Questions, Tester Questions, Quality Assurance Defense Questions]
 > [!question] How did you verify the system's own calculations rather than just its screens?
 > The lifecycle suite uses an **independent progress oracle** — progress is computed separately by the test and compared against what the system reports, so the test doesn't simply trust the application's own output. → [[Testing Strategy]]
 
-Related: [[Defense Questions Overview]] · [[Testing Strategy]] · [[QA Bug Tracking Nov 2026]] · [[Access Control]]
+Related: [[Defense Questions Overview]] · [[Testing Phases Explained]] · [[Testing Strategy]] · [[QA Bug Tracking Nov 2026]] · [[Study Guide by Role]]

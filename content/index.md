@@ -20,7 +20,8 @@ aliases: [Home, MOC, Index, EasyConstruct Map]
 |---|---|
 | **Explain it to anyone (5 min)** | [[What is EasyConstruct]] → [[The Problem at ORRA]] → [[Roles Overview]] → [[Project Lifecycle]] |
 | **Defend the thesis** | [[Objectives]] → [[Scope and Limitations]] → [[Decision Support Overview]] → [[Architecture Overview]] → [[Testing Strategy]] → [[November 2026 Updates]] |
-| **Prepare for the panel 🎤** | [[Defense Questions Overview]] → [[General Questions]] → [[Technical Questions]] → your role's question set |
+| **Prepare for the panel 🎤** | [[Study Guide by Role]] → [[Defense Questions Overview]] → [[General Questions]] → [[Technical Questions]] → your role's set |
+| **Understand the testing** | [[Testing Phases Explained]] → [[Testing Strategy]] → [[QA Bug Tracking Nov 2026]] |
 | **Understand the code** | [[Tech Stack]] → [[Monorepo Structure]] → [[Backend Layering]] → [[Request Journey]] → [[API Modules]] → [[Frontend Architecture]] → [[Database and Drizzle]] |
 | **Learn the terms** | [[Glossary]] |
 
@@ -49,6 +50,7 @@ mindmap
       Documents & Files
       Notifications & Realtime
     Decision Support
+      Why It Counts as AI
       Signals
       Proposal Validation
       Plan & Impact Forecast
@@ -72,10 +74,12 @@ mindmap
       Branches
     Quality & Timeline
       Testing
+      Testing Phases Explained
       Bug Tracking
       Timeline
       November 2026
     Defense Questions
+      Study Guide by Role
       General
       Technical
       Project Manager
@@ -91,7 +95,7 @@ mindmap
 
 **03 Core Flows** — [[Project Lifecycle]] · [[Lifecycle Gates]] · [[Workflows and Approvals]] · [[RFI and RFA]] · [[Attendance and Geofencing]] · [[Payroll Engine]] · [[Finance Module]] · [[Documents and Files]] · [[Notifications and Realtime]]
 
-**04 Decision Support** — [[Decision Support Overview]] · [[Signals]] · [[Proposal Validation and Cost Reference]] · [[Plan Suggestion and Impact Forecast]] · [[Reconciliation Checks]]
+**04 Decision Support** — [[Decision Support Overview]] · [[Why It Counts as AI]] · [[Signals]] · [[Proposal Validation and Cost Reference]] · [[Plan Suggestion and Impact Forecast]] · [[Reconciliation Checks]]
 
 **05 Architecture** — [[Architecture Overview]] · [[Tech Stack]] · [[Monorepo Structure]] · [[Backend Layering]] · [[API Modules]] · [[Frontend Architecture]] · [[Database and Drizzle]] · [[Request Journey]]
 
@@ -99,13 +103,13 @@ mindmap
 
 **07 Infrastructure** — [[Deployment and Hosting]] · [[Scheduled Jobs and Backups]] · [[Caching and Performance]] · [[Environments and Branches]]
 
-**08 Quality** — [[Testing Strategy]] · [[QA Bug Tracking Nov 2026]]
+**08 Quality** — [[Testing Strategy]] · [[Testing Phases Explained]] · [[QA Bug Tracking Nov 2026]]
 
 **09 Timeline** — [[Development Timeline]] · [[November 2026 Updates]]
 
 **10 Glossary** — [[Glossary]]
 
-**11 Defense Questions** 🎤 — [[Defense Questions Overview]] · [[General Questions]] · [[Technical Questions]] · [[Project Manager Questions]] · [[Programmer Questions]] · [[Quality Assurance Questions]] · [[System Analyst Questions]]
+**11 Defense Questions** 🎤 — [[Study Guide by Role]] · [[Defense Questions Overview]] · [[General Questions]] · [[Technical Questions]] · [[Project Manager Questions]] · [[Programmer Questions]] · [[Quality Assurance Questions]] · [[System Analyst Questions]]
 
 > [!warning] Things in the manuscript that differ from the code (worth updating in the paper)
 > - "AI-driven" features are **rule-based and deterministic**; the System Flow paper says "external AI APIs" — the code calls no AI model ([[Decision Support Overview]]).

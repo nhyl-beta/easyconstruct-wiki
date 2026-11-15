@@ -39,4 +39,7 @@ aliases: [AI, AI Features, Insights, Decision Support]
 - **Usefulness tracking:** `decision-support/service.ts` records whether advice was *shown, taken or dismissed* (best-effort, never blocks the user). Good evidence for Chapter 5.
 - Thresholds live in one file: `core/config/signals.ts`.
 
-Related: [[Objectives]] · [[Signals]]
+> [!important] Defending the "AI-driven" label
+> Rule-based does **not** mean "not AI" — knowledge-based reasoning is a recognized branch of the field, and this layer spans five technique families (expert systems, case-based reasoning, heuristic anomaly detection, rule-based NLP, knowledge-based planning). Full argument: [[Why It Counts as AI]].
+
+Related: [[Why It Counts as AI]] · [[Objectives]] · [[Signals]]

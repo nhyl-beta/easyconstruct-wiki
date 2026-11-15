@@ -49,4 +49,7 @@ Goal: cut ~36 h of two-person manual clicking to a short human review.
 ## Manuscript testing phases (Ch. 4)
 Unit → Integration (e.g. Site Personnel attendance reaches HR → payroll) → Alpha → Beta (ORRA office staff) → Field testing.
 
-Related: [[QA Bug Tracking Nov 2026]] · [[Access Control]]
+> [!tip] Not the QA member?
+> [[Testing Phases Explained]] covers this same ground in plain language — what each level and phase means, and the vocabulary a panel may ask you to define.
+
+Related: [[Testing Phases Explained]] · [[QA Bug Tracking Nov 2026]] · [[Access Control]] · [[Quality Assurance Questions]]

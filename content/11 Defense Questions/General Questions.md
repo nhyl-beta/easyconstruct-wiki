@@ -52,12 +52,14 @@ Practise until it takes 45–60 seconds. Then stop talking.
 > [!warning] This is the question most likely to go badly. Rehearse it.
 
 > [!question] You call it "AI-driven," but isn't it just rules and if-else statements?
-> **Answer directly, then justify the choice:**
-> *"The features are rule-based and deterministic — thresholds, statistical comparison against past projects, and text-similarity matching. We chose that deliberately over a language model for four reasons: every output is explainable (it states what it compared against), it's repeatable and therefore testable, it costs nothing and sends no company data to a third party, and it respects our own scope limitation that the system must support decisions rather than make them."*
-> → [[Decision Support Overview]]
+> **Don't concede this one — it's defensible.** AI is not only machine learning; rule-based and knowledge-based reasoning is the oldest established branch of the field. Name the techniques: *"The signals module is a rule-based expert system — eight production rules, each with a conclusion and a recommended action. Issue precedents use case-based reasoning. Proposal validation is heuristic anomaly detection against the median of comparable past projects. Requirement structuring is rule-based NLP."*
+> The full argument, the family-tree diagram and the scripted answer live in **[[Why It Counts as AI]]** — read that note before defense day.
 
-> [!question] Then why use the term "AI" in your manuscript at all?
-> Acknowledge the gap honestly — this is a **known wording issue** flagged in [[00 Start Here]]. The defensible framing is *decision support* / *rule-based intelligence*. If the panel pushes, concede the terminology and defend the engineering: *"The function is intelligent assistance; 'AI-driven' overstates the mechanism, and we'd revise that wording."* Panels forgive an owned mistake; they punish a defended one.
+> [!question] Why symbolic AI instead of machine learning?
+> Three reasons, in this order: ORRA has dozens of historical records, not thousands, so there is nothing to train on; every output must be explainable because a PM has to justify a flag to an owner, and "twice the median of five comparable proposals" can be defended in a meeting while a model score cannot; and determinism makes it unit-testable, which is what lets us verify it within a capstone's scope. **Choosing not to use ML here is the correct engineering judgment.** → [[Why It Counts as AI]]
+
+> [!question] Does your system call external AI APIs, as the System Flow paper says?
+> **No — and concede this immediately.** Nothing in the codebase calls an AI model or service; the only outside data source is a read-only construction cost catalog. That line in the paper is a factual wording error and should be corrected. Keep the two issues separate: defend *"rule-based reasoning is AI"* firmly, and give up *"we call external AI APIs"* instantly. → [[00 Start Here]]
 
 > [!question] Can you give a concrete example of what it actually does?
 > Proposal validation: it finds past proposals of the same project type, takes the median amount, and flags the new one if it exceeds median × 2 or falls below × 0.4; separately it detects near-duplicates using title similarity ≥ 0.7 with amount within ±10% inside 30 days. Every flag names its comparison basis. → [[Proposal Validation and Cost Reference]]
