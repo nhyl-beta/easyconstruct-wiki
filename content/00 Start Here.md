@@ -20,6 +20,7 @@ aliases: [Home, MOC, Index, EasyConstruct Map]
 |---|---|
 | **Explain it to anyone (5 min)** | [[What is EasyConstruct]] → [[The Problem at ORRA]] → [[Roles Overview]] → [[Project Lifecycle]] |
 | **Defend the thesis** | [[Objectives]] → [[Scope and Limitations]] → [[Decision Support Overview]] → [[Architecture Overview]] → [[Testing Strategy]] → [[November 2026 Updates]] |
+| **Prepare for the panel 🎤** | [[Defense Questions Overview]] → [[General Questions]] → [[Technical Questions]] → your role's question set |
 | **Understand the code** | [[Tech Stack]] → [[Monorepo Structure]] → [[Backend Layering]] → [[Request Journey]] → [[API Modules]] → [[Frontend Architecture]] → [[Database and Drizzle]] |
 | **Learn the terms** | [[Glossary]] |
 
@@ -74,6 +75,13 @@ mindmap
       Bug Tracking
       Timeline
       November 2026
+    Defense Questions
+      General
+      Technical
+      Project Manager
+      Programmer
+      Quality Assurance
+      System Analyst
 ```
 
 ## All notes
@@ -96,6 +104,8 @@ mindmap
 **09 Timeline** — [[Development Timeline]] · [[November 2026 Updates]]
 
 **10 Glossary** — [[Glossary]]
+
+**11 Defense Questions** 🎤 — [[Defense Questions Overview]] · [[General Questions]] · [[Technical Questions]] · [[Project Manager Questions]] · [[Programmer Questions]] · [[Quality Assurance Questions]] · [[System Analyst Questions]]
 
 > [!warning] Things in the manuscript that differ from the code (worth updating in the paper)
 > - "AI-driven" features are **rule-based and deterministic**; the System Flow paper says "external AI APIs" — the code calls no AI model ([[Decision Support Overview]]).
