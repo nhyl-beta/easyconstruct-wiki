@@ -17,7 +17,7 @@ aliases: [AI, AI Features, Insights, Decision Support]
 | Manuscript wording | What the code actually does | Note |
 |---|---|---|
 | AI proposal validation | Compares a proposal with similar past proposals (median ×2 / ×0.4), contract, duplicates (title similarity ≥ 0.7, amount ±10%, 30 days) | [[Proposal Validation and Cost Reference]] |
-| AI cost reference | Matches line items to a construction cost catalog (EstimationPro.ai) via Dice similarity ≥ 0.40 | [[Proposal Validation and Cost Reference]] |
+| AI cost reference | Matches line items to a construction cost catalog (EstimationPro.ai) via Dice similarity ≥ 0.40 — now covers both workflow proposals and Purchase Requests | [[Proposal Validation and Cost Reference]] |
 | AI requirement generation | Template packs + `structuring.ts`: splits notes into Objectives / Materials / Constraints / Specifications, flags vague phrases | this page ↓ |
 | AI workflow orchestration | Draft plan (milestones, tasks, responsibilities) on an approved proposal | [[Plan Suggestion and Impact Forecast]] |
 | AI issue detection & resolution | 8 signal rules + "similar issue resolved before" precedents | [[Signals]] |

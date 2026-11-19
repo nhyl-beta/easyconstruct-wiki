@@ -29,6 +29,12 @@ Source: 74 commits on `thesis-final-staging` (1–13 Nov) + November project doc
 - **Neon Realtime** live query for the notification inbox; "Waiting on you" and approvals badge refresh live. → [[Notifications and Realtime]]
 - **CI:** readiness check, boot job, live smoke test; demo reset counts a linked roster employee once.
 
+## Week 3 (17–19 Nov)
+- **`material_price_references`** (Procurement's offline demo-pricing table) reshaped to mirror `reference_snapshots`' low/typical/high + `fetchedAt` structure, so the two catalogs share one mental model.
+- **Procurement wired into the real Decision Support system:** Purchase Requests now get the same cost-reference check as Budget Change Request / Change Order Request line items. `validation_results` generalized to accept either a workflow **or** a Purchase Request as parent (DB-enforced one-parent-per-row). Badge now shows on the Purchase Request detail panel. → [[Proposal Validation and Cost Reference]]
+- Demo seeding (`demo-seed-procurement.ts`) now routes its Purchase Requests through the real validator, same precedent as the stage demo seed, so the demo data genuinely exercises the DSS path rather than faking it.
+- Trimmed scope: Purchase *Orders* are not wired into DSS — only Requests.
+
 ## Manuscript status
 - Objective 4 (reports) considered implemented; writing **Chapter 5** (findings, conclusions, recommendations).
 - Implementation Results: **not yet implemented at ORRA** → no production/survey results reported.

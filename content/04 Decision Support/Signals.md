@@ -10,7 +10,7 @@ aliases: [Signal Rules, Issue Detection]
 ## The rules and thresholds (`core/config/signals.ts`)
 | Rule | Fires when… | ⚠ Warn | 🔴 Critical |
 |---|---|---|---|
-| `cost-variance` | A line item's price is above/below the typical catalog range | 15% | 30% |
+| `cost-variance` | A line item's price is above/below the typical catalog range (workflow **or** Purchase Request line) | 15% | 30% |
 | `cumulative-change-impact` | Approved changes add up vs contract | 10% | 20% |
 | `burn-vs-progress` | Spend % minus task-completion % | 20 pts | 35 pts |
 | `issue-recurrence` | Same kind of issue repeats within 30 days | 3 | 5 |

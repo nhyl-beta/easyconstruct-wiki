@@ -31,6 +31,9 @@ flowchart LR
 - Cached in `reference_snapshots` for **7 days**; daily request budget **80** (provider limit 100/day).
 - IT Designer has an **AI Validation Reference** page to inspect the catalog.
 
+> [!update] Extended to Procurement — 19 Nov
+> A submitted **Purchase Request**'s line items now get the same catalog check as Budget Change Request / Change Order Request lines: same matcher, same `reference_snapshots`, same `ReferenceBasisBadge` — shown on the Purchase Request detail panel. Both parent types share one `validation_results` table, keyed to **either** a workflow line item **or** a Purchase Request line item (exactly one parent per row, enforced by a DB constraint). Purchase *Orders* are **not** wired in yet — Requests only. This is separate from `material_price_references`, the offline demo-pricing table Procurement also has; that one doesn't feed this matcher.
+
 > [!tip] Explaining Dice in one line
 > "plywood 12mm 4x8" vs "12mm marine plywood" share 2 tokens → 2×2 / (3+3) = **0.67** → match.
 
