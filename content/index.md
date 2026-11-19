@@ -21,6 +21,7 @@ aliases: [Home, MOC, Index, EasyConstruct Map]
 | **Explain it to anyone (5 min)** | [[What is EasyConstruct]] → [[The Problem at ORRA]] → [[Roles Overview]] → [[Project Lifecycle]] |
 | **Defend the thesis** | [[Objectives]] → [[Scope and Limitations]] → [[Decision Support Overview]] → [[Architecture Overview]] → [[Testing Strategy]] → [[November 2026 Updates]] |
 | **Prepare for the panel 🎤** | [[Study Guide by Role]] → [[Defense Questions Overview]] → [[General Questions]] → [[Technical Questions]] → your role's set |
+| **Defend the manuscript 📄** | [[Paper-Based Questions]] → [[Why It Counts as AI]] → [[Developer Knowledge Check]] |
 | **Understand the testing** | [[Testing Phases Explained]] → [[Testing Strategy]] → [[QA Bug Tracking Nov 2026]] |
 | **Understand the code** | [[Tech Stack]] → [[Monorepo Structure]] → [[Backend Layering]] → [[Request Journey]] → [[API Modules]] → [[Frontend Architecture]] → [[Database and Drizzle]] |
 | **Learn the terms** | [[Glossary]] |
@@ -80,6 +81,8 @@ mindmap
       November 2026
     Defense Questions
       Study Guide by Role
+      Paper-Based Questions
+      Developer Knowledge Check
       General
       Technical
       Project Manager
@@ -109,7 +112,7 @@ mindmap
 
 **10 Glossary** — [[Glossary]]
 
-**11 Defense Questions** 🎤 — [[Study Guide by Role]] · [[Defense Questions Overview]] · [[General Questions]] · [[Technical Questions]] · [[Project Manager Questions]] · [[Programmer Questions]] · [[Quality Assurance Questions]] · [[System Analyst Questions]]
+**11 Defense Questions** 🎤 — [[Study Guide by Role]] · [[Defense Questions Overview]] · [[Paper-Based Questions]] · [[Developer Knowledge Check]] · [[General Questions]] · [[Technical Questions]] · [[Project Manager Questions]] · [[Programmer Questions]] · [[Quality Assurance Questions]] · [[System Analyst Questions]]
 
 > [!warning] Things in the manuscript that differ from the code (worth updating in the paper)
 > - "AI-driven" features are **rule-based and deterministic**; the System Flow paper says "external AI APIs" — the code calls no AI model ([[Decision Support Overview]]).

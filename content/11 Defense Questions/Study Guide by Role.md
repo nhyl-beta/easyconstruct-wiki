@@ -27,9 +27,14 @@ Study these regardless of role. If any member can't do these, the whole group lo
 | 8 | Name the **four manuscript-vs-code mismatches** | [[00 Start Here]] |
 | 9 | Draw the **architecture** as four boxes: browser → API → database → storage | [[Architecture Overview]] |
 | 10 | Quote **one test number** (1,090 API unit tests) | [[Testing Strategy]] |
+| 11 | Define any term you say out loud — JWT, ORM, REST, normalization | [[Developer Knowledge Check]] |
+| 12 | Know the **ORRA facts**: founded 1985, three services, the server virus incident | [[Paper-Based Questions]] |
 
 > [!tip] The 10-minute drill
-> Each member answers all ten out loud, timed, to the group. Anyone who hesitates on more than two re-reads those notes that night. Run it twice before defense day.
+> Each member answers all twelve out loud, timed, to the group. Anyone who hesitates on more than two re-reads those notes that night. Run it twice before defense day.
+
+> [!warning] Before anything else: fix the paper
+> [[Paper-Based Questions]] lists **eight places where the manuscript contradicts itself or the system** — future-tense testing, a conclusion that understates a deployed system, a Node version mismatch, a misspelled proponent name. Correcting those costs an afternoon and removes the easiest marks a panel can take from you.
 
 ---
 

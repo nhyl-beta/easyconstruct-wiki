@@ -20,6 +20,8 @@ aliases: [Defense Questions, Panel Questions, Q&A, Mock Defense]
 | [[Quality Assurance Questions]] | QA role | Test strategy, bugs, evidence |
 | [[System Analyst Questions]] | SA role | Requirements, modeling, business rules |
 | [[Study Guide by Role]] 📚 | **Start here when revising** | What each member studies, plus a revision schedule |
+| [[Paper-Based Questions]] 📄 | Questions straight from the manuscript | Title, Ch. 1–5, and where the paper contradicts itself |
+| [[Developer Knowledge Check]] 🧠 | Fundamentals you're assumed to know | JWT, normalization, REST, CORS — asked mid-answer as traps |
 
 ## 🔵 How to use this bank
 1. **Read the linked note, not just the answer.** Every answer points to the note with the real detail — the panel's second question is always *"can you expand on that?"*
@@ -30,7 +32,7 @@ aliases: [Defense Questions, Panel Questions, Q&A, Mock Defense]
 > [!warning] The three questions most likely to hurt
 > 1. **"Why do you call it AI when it's just if-else?"** → This one is **defensible — do not concede it.** Rule-based reasoning is a recognized branch of AI. The full argument and a scripted answer are in [[Why It Counts as AI]].
 > 2. **"Did you deploy it at ORRA? What were the results?"** → Not yet implemented at ORRA, so there are no production or survey results. Say it plainly. → [[November 2026 Updates]]
-> 3. **"Your manuscript says X but your system does Y."** → Four known mismatches are listed in [[00 Start Here]]. Know them before the panel finds them.
+> 3. **"Your manuscript says X but your system does Y."** → Eight documented contradictions inside the paper itself are listed in [[Paper-Based Questions#⚠️ Where the paper contradicts itself]], plus four manuscript-vs-code mismatches in [[00 Start Here]]. Know them before the panel finds them.
 
 ## 🟣 Preparation checklist
 - [ ] Can deliver the 1-minute pitch without notes → [[General Questions]]

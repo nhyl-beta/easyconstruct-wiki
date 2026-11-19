@@ -69,32 +69,12 @@ Practise until it takes 45–60 seconds. Then stop talking.
 
 ---
 
-## Related literature — serverless, federated learning, upskilling
-> [!warning] These come from the Anbalagan (2024) citation in Related Literature. Know which of its suggestions apply to this system and which don't — don't claim all three.
-
-> [!question] Your Related Literature cites federated learning as a solution — does your system use it?
-> **No, and say so directly.** Federated learning trains one shared ML model across multiple independent data owners without centralizing their data. EasyConstruct has no ML model anywhere — the AI layer is rule-based and deterministic, and it's single-tenant (one firm, one database), not multiple organizations pooling data. There's nothing to train and no second party to federate with. The citation is general background on AI+cloud challenges, not a technique this system implements. → [[Why It Counts as AI]]
-
-> [!question] Does your system use a serverless architecture?
-> **Selectively, and that's a stronger answer than "yes."** Cloudflare Pages (frontend), Neon (database), and GitHub Actions (scheduled jobs) are all serverless. The API itself runs always-on on Render — not serverless — by deliberate choice: it originally ran on Vercel serverless functions and got paused (Oct 21) for exceeding compute limits, caused by long-lived SSE connections for live notifications and high concurrent requests per dashboard load. We moved it to a persistent process once we understood the workload didn't fit serverless's execution model. That's an evaluated trade-off, not something we didn't do. → [[Deployment and Hosting]] · [[Environments and Branches]]
-
-> [!question] What about workforce upskilling programs, also from that citation?
-> That's an organizational recommendation, not a system feature — no software implements "upskilling." It belongs in Chapter 5 as a rollout recommendation for ORRA, alongside the honest point that the system isn't yet deployed or surveyed there. Don't claim the system does this.
-
-> [!question] Rakib et al. (2025), cited in your Related Studies, found AI decision support raised decision accuracy from 72.5% to 88.9% and satisfaction by 22.8% — did EasyConstruct achieve anything like that?
-> No, and don't imply otherwise. Those are that study's own findings from its own deployed system, cited as motivation for why AI-assisted decision support is worth building — not a benchmark EasyConstruct has been measured against. EasyConstruct hasn't been deployed at ORRA yet, so no comparable accuracy or satisfaction figures exist for it. Keep the citation's numbers and your own (currently: zero production data) clearly separate if asked.
-
----
-
 ## Methodology & validation
 > [!question] What methodology did you use?
 > Iterative/Agile development against a fixed objective set, with work tracked as numbered fix lists per objective (e.g. *fix 3.2* = impact forecast) — the numbers still appear in code comments. Testing followed the manuscript's phases: Unit → Integration → Alpha → Beta → Field. → [[Testing Strategy]]
 
 > [!question] How did you validate that the system works?
 > Three independent layers: automated tests (1,090 API unit tests passing as of 12 Nov), a QA automation suite covering 35 lifecycle cases/191 steps and 901 per-role page checks, and manual testing by two testers recording results per role. → [[Testing Strategy]] · [[QA Bug Tracking Nov 2026]]
-
-> [!question] Your Testing section describes Beta and Field Testing in future tense — hasn't more testing already happened?
-> Yes — that section describes the testing *phases* from the methodology (Unit → Integration → Alpha → Beta → Field), written before the later phases occurred. What's actually been completed goes further than that wording implies: automated unit tests, a QA automation suite, and manual testing by two testers, as covered in Results. Beta and Field testing specifically depend on ORRA personnel access, which is why those two stay described prospectively — not because less work was done than the paper suggests. → [[Testing Strategy]]
 
 > [!question] Is it deployed at ORRA? What were the results?
 > **No — not yet implemented at ORRA**, so there are no production usage results or user-satisfaction survey data to report. Say this plainly and move to what you *do* have: a live deployment, automated test evidence, and client-reviewed functionality. Inventing results here is the fastest way to fail. → [[November 2026 Updates]]
@@ -120,4 +100,4 @@ Practise until it takes 45–60 seconds. Then stop talking.
 > [!question] Is the data secure? What about data privacy?
 > Passwords are hashed, access is enforced server-side in three layers, sensitive actions are written to an audit trail, and the database is backed up on a schedule. A dedicated security review in November closed 13 findings. → [[Security Hardening Nov 2026]] · [[Access Control]]
 
-Related: [[Defense Questions Overview]] · [[Technical Questions]] · [[Objectives]] · [[Scope and Limitations]]
+Related: [[Defense Questions Overview]] · [[Paper-Based Questions]] · [[Technical Questions]] · [[Objectives]] · [[Scope and Limitations]]

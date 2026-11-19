@@ -68,4 +68,4 @@ aliases: [Developer Questions, Programmer Defense Questions, Coder Questions]
 > [!question] What part of the code are you least happy with?
 > Have an answer. Choosing a real weakness — a module you'd refactor, the type-error baseline you inherited rather than eliminated — reads as engineering maturity. "Nothing" reads as inexperience.
 
-Related: [[Defense Questions Overview]] · [[Technical Questions]] · [[Backend Layering]] · [[Testing Strategy]]
+Related: [[Defense Questions Overview]] · [[Developer Knowledge Check]] · [[Technical Questions]] · [[Backend Layering]] · [[Testing Strategy]]

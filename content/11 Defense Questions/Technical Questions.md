@@ -65,9 +65,6 @@ aliases: [Technical Defense Questions, Tech Questions]
 ---
 
 ## Performance, reliability, operations
-> [!question] Your tech stack lists Redis — what is it actually used for, and what happens if it's unavailable?
-> It's a shared cache for frequently-requested read data, such as dashboard summaries, so repeated requests don't hit the database every time — a serverless-hosted Redis, consistent with the free-tier-first infrastructure choice. It degrades safely: when Redis isn't configured or isn't reachable, the system falls back to an in-memory cache automatically, so a slow or unavailable cache never breaks a request — it just means a cache miss, not an error. → [[Caching and Performance]]
-
 > [!question] Will it handle many users? How does it scale?
 > Honest scoping first: it's sized for a single firm, not for thousands of tenants. Then the specifics — cached read paths with scope-aware keys, pagination on list endpoints, and a stateless API that can run multiple instances behind the host's load balancer. → [[Caching and Performance]]
 
@@ -101,49 +98,7 @@ aliases: [Technical Defense Questions, Tech Questions]
 > [!question] How is payroll computed? How do you know it's correct?
 > Gross labor from attendance, then employee shares for SSS, PhilHealth and Pag-IBIG from published schedules; the engine is unit-tested (`engine.test.ts`, `payroll-rules.test.ts`, `trace.test.ts`) and every computation keeps a trace of how it was derived. State the limitation unprompted: no 13th-month, no de minimis, no year-end annualization, and it never remits. → [[Payroll Engine]]
 
-> [!question] Does plan suggestion or impact forecast automatically change anything?
-> No. Plan suggestion drafts milestones, tasks and a responsibilities checklist from a project-type template once a proposal is approved — the PM accepts or discards each item individually, and an accepted item goes through the same milestone/task services as a manually created one, so every existing rule (draft-only under gate C3, due dates inside the milestone, write locks) still applies. Impact forecast only *computes and displays* projected cost-vs-contract, estimate-at-completion and schedule slip before an approver acts — it never applies the change itself. → [[Plan Suggestion and Impact Forecast]]
+> [!tip] Two companion sets
+> [[Developer Knowledge Check]] covers the fundamentals behind these answers (what a JWT actually contains, what normalization means), and [[Paper-Based Questions]] covers the technologies named in the manuscript but not in the architecture diagram — Leaflet, Zod, TanStack Query, UptimeRobot.
 
-> [!question] Your impact forecast measures "how much is done" — how, exactly?
-> By task completion, deliberately not the `projects.progress` field, because that field contains phase-band offsets (e.g. a phase is defined as "40–60% of the project") that would distort a cost-per-percent-complete calculation. Using the raw task-completion ratio keeps the math honest. → [[Plan Suggestion and Impact Forecast]]
-
-> [!question] What does the reconciliation checker actually verify, and who fixes a mismatch?
-> Six specific checks: stored vs recomputed project progress, budget "actual" vs the sum of approved expenses/labor, payroll batch totals vs their line items, batch hours vs verified attendance, orphaned references, and inactive employees still staffed on a project. It's read-only — it lists mismatches in an admin panel, up to 20 per check with a link to the first one — and a person decides which side is correct and fixes it. It never auto-corrects data. → [[Reconciliation Checks]]
-
-> [!question] How do you know the decision-support layer is actually useful, and not just present for the sake of the "AI" claim?
-> `decision-support/service.ts` records, best-effort, whether a piece of advice was **shown, taken, or dismissed** — without ever blocking the user if that recording fails. That's the evidence base for Chapter 5: if a given signal or validation is dismissed far more often than acted on, that's a measurable signal the threshold or the rule itself needs tuning, not a reason to assume it's working. → [[Decision Support Overview]]
-
-> [!question] What happens when a signal's underlying condition goes away — does it keep warning forever?
-> No — each finding is stored once per occurrence and **auto-resolves** when the condition clears on a later scan, so there's no notification spam and no stale warning sitting on a project that's already been fixed. → [[Signals]]
-
-> [!question] Could a signal or validation flag be wrong — a false positive?
-> Yes, and that's expected of any threshold-based rule — a cost-variance warning at 15% is a judgment call, not a certainty. Two things limit the damage: thresholds live in one config file so they can be retuned without touching logic, and usefulness tracking (shown/taken/dismissed) would surface a rule that's wrong often enough to be dismissed habitually. Nothing a signal says can gate or block anything, so a false positive costs a reviewer's attention, never a stuck workflow. → [[Signals]] · [[Decision Support Overview]]
-
-> [!question] Issue precedent draws on "all projects" — doesn't that leak one project's data to another?
-> No — it only ever surfaces an issue's **title, category, resolution note and date**. It deliberately never shows another project's commercial data (cost, budget, contract terms), which is what keeps cross-project learning useful without crossing a confidentiality line between clients or project teams. → [[Signals]]
-
----
-
-## Cloud-based architecture — going deeper
-> [!question] What does "cloud-based" concretely mean for this system, beyond "it's on the internet"?
-> No installation on any machine, one database as the single source of truth instead of per-device files, and access from any device with a browser — which is what lets a PM review proposals from the office while Site Personnel log attendance from the field on the same live data. That's the literal mechanism behind Objective 1. → [[Deployment and Hosting]]
-
-> [!question] How do you avoid serving stale cached data right after someone makes a change?
-> A version-counter per cache domain, not per key. A write increments the counter for every domain it affects *before* the response is sent; old cache keys are simply never looked up again — nothing has to be found and deleted. Writes that might move progress or status invalidate broadly; narrow writes invalidate only their own domain. → [[Caching and Performance]]
-
-> [!question] Render's free tier sleeps when idle — does a user ever hit a cold start?
-> In practice, no: UptimeRobot pings the API every 5 minutes, inside Render's 15-minute idle-sleep window, so the instance stays warm. The health check it hits (`/api/health`) deliberately makes no database call, so it stays fast even under load — a separate `/api/health/ready` endpoint runs an actual `SELECT 1` for true readiness checks. → [[Deployment and Hosting]]
-
-> [!question] How do you actually know the live system is healthy, not just "deployed"?
-> A GitHub Actions smoke test runs every 30 minutes against the live site: confirms the API and database answer, sign-in works, and first pages load. That's read-only and separate from the keep-awake ping — one proves the system is reachable, the other proves it's correct. → [[Scheduled Jobs and Backups]]
-
-> [!question] What stops a scheduled job from running twice and sending duplicate emails or notifications?
-> Two layers: `DISABLE_SCHEDULER=true` turns off Render's in-process timers in production so only GitHub Actions' cron calls run jobs — no second clock — and the overdue job additionally takes a transaction-level Postgres advisory lock, so even a second concurrent trigger can't double-send. → [[Scheduled Jobs and Backups]]
-
-> [!question] GitHub Actions is free, but is it reliable for production cron?
-> With one caveat, stated plainly rather than hidden: GitHub disables scheduled workflows on a public repo after 60 days with no repository activity. That's a known, named open item — the mitigation is keeping the repo active and, longer-term, adding a second trigger such as an external pinger. It's a real constraint of the free-tier choice, not something we're unaware of. → [[Scheduled Jobs and Backups]]
-
-> [!question] If the Render or Neon free tier breaks like Vercel's did, how portable is the system?
-> Nothing is hard-locked to one vendor. The API is a Docker container, so it can run on any container host; file storage uses an S3-compatible adapter, so any S3-compatible provider works, not just Filebase; database migrations are plain SQL files that run against any Postgres; and email goes through standard SMTP. The Vercel migration itself is the proof — it happened once already, without a rewrite. → [[Deployment and Hosting]]
-
-Related: [[Defense Questions Overview]] · [[Programmer Questions]] · [[Architecture Overview]] · [[Access Control]]
+Related: [[Defense Questions Overview]] · [[Developer Knowledge Check]] · [[Paper-Based Questions]] · [[Programmer Questions]] · [[Architecture Overview]]
